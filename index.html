@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://ten-marshy-quarter.glitch.me/ -->
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link type="text/css" href="styles/examples.css" rel="stylesheet">
+<title>&lt;model-viewer&gt; Augmented Reality</title>
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+</script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+</script>
+
+</head>
+  <body>
+
+    <div id="webXR" class="demo">
+<model-viewer src="assets/bread.glb"
+poster="assets/bread.png"
+shadow-intensity="1"
+ar=""
+ar-scale="fixed"
+camera-controls=""
+alt="A 3D model carousel"
+data-js-focus-visible="" >
+<audio controls id="audio" >
+  <!-- <source src="assets/bread.mp3" type="audio/ogg"> -->
+  <source src="assets/bread.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<button slot="ar-button" id="ar-button">
+  View in your space
+</button>
+<div id="ar-prompt">
+  <img src="assets/prompt.png">
+</div>
+
+<div class="slider">
+  <div class="slides">
+    <button class="slide selected" onclick="switchSrc(this, &#39;bread&#39;)" style="background-image: url(&#39;assets/bread.png&#39;);">
+      <div>das Brot [bʀoːt]</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;banana&#39;)" style="background-image: url(&#39;assets/banana.png&#39;);">
+      <div>die Banane [baˈnaːnə]</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;cat&#39;)" style="background-image: url(&#39;assets/cat.png&#39;);">
+        <div>die Katze [ˈkat͜sə]</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;dog&#39;)" style="background-image: url(&#39;assets/dog.png&#39;);">
+      <div>der Hund [húnd]</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;horse&#39;)" style="background-image: url(&#39;assets/horse.png&#39;);">
+      <div>der Pferd [pférd]</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;beer&#39;)" style="background-image: url(&#39;assets/beer.png&#39;);">
+      <div>das Bier []</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;wine&#39;)" style="background-image: url(&#39;assets/wine.png&#39;);">
+      <div>der Wein []</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;apple&#39;)" style="background-image: url(&#39;assets/apple.png&#39;);">
+      <div>der Apfel []</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;milk&#39;)" style="background-image: url(&#39;assets/milk.png&#39;);">
+      <div>die Milch []</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;book&#39;)" style="background-image: url(&#39;assets/book.png&#39;);">
+      <div>das Buch []</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;window&#39;)" style="background-image: url(&#39;assets/window.png&#39;);">
+      <div>das Fenster []</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;table&#39;)" style="background-image: url(&#39;assets/table.png&#39;);">
+      <div>der Tisch []</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;pencil&#39;)" style="background-image: url(&#39;assets/pencil.png&#39;);">
+      <div>der Bleistift []</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;cheese&#39;)" style="background-image: url(&#39;assets/cheese.png&#39;);">
+      <div>der Käse []</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;hand&#39;)" style="background-image: url(&#39;assets/hand.png&#39;);">
+      <div>die Hand []</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;phone&#39;)" style="background-image: url(&#39;assets/phone.png&#39;);">
+      <div>das Handy []</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;head&#39;)" style="background-image: url(&#39;assets/head.png&#39;);">
+      <div>der Kopf []</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;present&#39;)" style="background-image: url(&#39;assets/present.png&#39;);">
+      <div>das Geschenk []</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;bicycle&#39;)" style="background-image: url(&#39;assets/bicycle.png&#39;);">
+      <div>das Fahrrad []</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;car&#39;)" style="background-image: url(&#39;assets/car.png&#39;);">
+      <div>das Auto []</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;boat&#39;)" style="background-image: url(&#39;assets/boat.png&#39;);">
+      <div>das Schiff []</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;bottle&#39;)" style="background-image: url(&#39;assets/bottle.png&#39;);">
+      <div>die Flasche []</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;flower&#39;)" style="background-image: url(&#39;assets/flower.png&#39;);">
+      <div>die Blume []</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;bag&#39;)" style="background-image: url(&#39;assets/bag.png&#39;);">
+      <div>die Tasche []</div>
+    </button>
+    <button class="slide" onclick="switchSrc(this, &#39;lamp&#39;)" style="background-image: url(&#39;assets/lamp.png&#39;);">
+      <div>die Lampe []</div>
+    </button>
+</div>
+</div>
+</model-viewer>
+
+<script type="module">
+const modelViewer = document.querySelector("model-viewer");
+
+window.switchSrc = (element, name) => {
+  const base = "assets/" + name;
+  modelViewer.src = base + '.glb';
+  modelViewer.poster = base + '.png';
+  const slides = document.querySelectorAll(".slide");
+  slides.forEach((element) => {element.classList.remove("selected");});
+  element.classList.add("selected");
+document.getElementById("audio").src=base + '.mp3';;
+};
+
+document.querySelector(".slider").addEventListener('beforexrselect', (ev) => {
+  // Keep slider interactions from affecting the XR scene.
+  ev.preventDefault();
+});
+</script>
+
+<style>
+/* This keeps child nodes hidden while the element loads */
+:not(:defined) > * {
+  display: none;
+}
+
+model-viewer {
+  background-color: #eee;
+  overflow-x: hidden;
+  --poster-color: #eee;
+}
+
+#ar-button {
+  /* background-image: url(../../assets/ic_view_in_ar_new_googblue_48dp.png); */
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 12px 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  bottom: 132px;
+  padding: 0px 16px 0px 40px;
+  font-family: Roboto Regular, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  color:#4285f4;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 18px;
+  border: 1px solid #DADCE0;
+}
+
+#ar-button:active {
+  background-color: #E8EAED;
+}
+
+#ar-button:focus {
+  outline: none;
+}
+
+#ar-button:focus-visible {
+  outline: 1px solid #4285f4;
+}
+
+@keyframes circle {
+  from { transform: translateX(-50%) rotate(0deg) translateX(50px) rotate(0deg); }
+  to   { transform: translateX(-50%) rotate(360deg) translateX(50px) rotate(-360deg); }
+}
+
+@keyframes elongate {
+  from { transform: translateX(100px); }
+  to   { transform: translateX(-100px); }
+}
+
+model-viewer > #ar-prompt {
+  position: absolute;
+  left: 50%;
+  bottom: 175px;
+  animation: elongate 2s infinite ease-in-out alternate;
+  display: none;
+}
+
+model-viewer[ar-status="session-started"] > #ar-prompt {
+  display: block;
+}
+
+model-viewer > #ar-prompt > img {
+  animation: circle 4s linear infinite;
+}
+
+.slider {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  bottom: 16px;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slide {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+}
+
+.slide.selected {
+  border: 2px solid #4285f4;
+}
+
+.slide:focus {
+  outline: none;
+}
+
+.slide:focus-visible {
+  outline: 1px solid #4285f4;
+}
+
+</style>
+</div>
+
+
+
+<!-- <div>
+  <model-viewer camera-controls
+  src="assets/banana.glb"
+  ar-scale="fixed"
+alt="A simple 3D model"
+data-js-focus-visible>
+<button slot=”hotspot-0” > <div id=”annotation”>This is the nucleus</div></button>
+</div>
+
+<div>
+<model-viewer  camera-controls
+src="assets/bread.glb"
+ar-scale="fixed"
+alt="A simple 3D model"
+data-js-focus-visible>
+<button slot=”hotspot”
+data-position="0.028201325271605182m 0.05935626184433801m 0.0755150135924163m"
+data-normal="0.0867343373757204m 0.6221708675679851m 0.7780620581095672m">
+<div id=”annotation”>This is the bread</div></button>
+</div> -->
+<footer>
+<p>"Bread" (https://skfb.ly/Wvuq) by Francesco Coldesina is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  "#3DST6 Banana" (https://skfb.ly/zWyT) by alban is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  "My Cat Modeled" (https://skfb.ly/6U6yQ) by lilyjoyhanna is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/)
+  "Playful Dog" (https://skfb.ly/6YPIV) by mpmramos is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/)
+  "Agrippa" (https://skfb.ly/6ux9S) by Nioma van der Steen is licensed under Creative Commons Attribution-NonCommercial (http://creativecommons.org/licenses/by-nc/4.0/)
+  "Beer" (https://skfb.ly/6CZFJ) by Kasper is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  "The Wine Glass" (https://skfb.ly/6W6Kw) by Arcane Az is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  "Apple" (https://skfb.ly/6YMxn) by Moshe Caine is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  "Milk" (https://skfb.ly/6w8xO) by Multipainkiller Studio is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  "Book" (https://skfb.ly/6yM87) by IUPUI University Library is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  "Wooden window" (https://skfb.ly/6Sx6t) by shedmon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  "Wooden Table" (https://skfb.ly/6QXAJ) by shedmon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  "Pencil" (https://skfb.ly/6RtrH) by shedmon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  "Cheese - Content Creation 01 (school-assignment)" (https://skfb.ly/6WOIq) by Ilm89 is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  "Hand" (https://skfb.ly/6CyLo) by 3DMaesen is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  "Cell Phone" (https://skfb.ly/69vus) by Matt Gilchrist is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  "Angelica" (https://skfb.ly/6ouNX) by NikZava284 ✓ is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  "Game Ready Present 2 Low Poly" (https://skfb.ly/6wREC) by FunFant is licensed under Creative Commons Attribution-NoDerivs (http://creativecommons.org/licenses/by-nd/4.0/).
+  "Dirt bicycle 3D Model" (https://skfb.ly/6wGIH) by Javier Martín Hidalgo is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  "LUAZ. free model" (https://skfb.ly/6YQpO) by aaadragon is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  "Rowing Boat" (https://skfb.ly/6SZM9) by J.J.West is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  "Glass Bottle" (https://skfb.ly/69Opt) by Francesco Coldesina is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  "flower" (https://skfb.ly/6zxL8) by tojamerlin is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  "Bag asset" (https://skfb.ly/6YYwP) by 3DGuimaraes is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+  "Old Desk Lamp" (https://skfb.ly/6CzIJ) by Maxence Rouillet is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).
+</p>
+</body>
+</html>
