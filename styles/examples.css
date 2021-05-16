@@ -39,6 +39,19 @@
   --border-style-dark: 1px solid rgba(0,0,0,.5);
 }
 
+button.slide {
+    background-position: bottom;
+top: 80px;
+right: 0;
+width: 200px;
+height: 200px;
+}
+
+div.translate{
+  position: relative;
+
+}
+
 .sidebar {
   margin: 0;
   padding: 0;
@@ -751,7 +764,7 @@ paper-button {
   .header {
     padding: 10px 20px 10px 40px;
   }
-  
+
   .tab {
     visibility: visible;
   }
@@ -772,12 +785,12 @@ paper-button {
     border: 0px solid #555;
     box-sizing: border-box;
   }
-  
+
   .examples-container > .sample > #demo-container-1 {
     margin-top: 75px;
     padding-top: 0px;
   }
-  
+
   .examples-container > .sample > .demo {
     top: 0;
     height: 90vh;
